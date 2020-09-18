@@ -1,0 +1,17 @@
+.rpi-input {
+    font-size: 0.9rem;
+    font-weight: 300;
+
+    margin: 0;
+    margin-bottom: 1rem;
+
+    padding: 0.375em 0.75em;
+    border: 1px solid var(--rpi-darkestgray);
+    width: 100%;
+}
+
+.rpi-label {
+    color: var(--rpi-darkred);
+    font-weight: bold;
+    text-transform: uppercase;
+}

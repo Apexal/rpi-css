@@ -1,0 +1,11 @@
+.rpi-navbar {
+    width: 100%;
+    background-color: var(--rpi-darkestgray);
+    color: var(--rpi-white);
+    font-size: 1.25rem;
+    
+    .navbar-item {
+        padding: 1rem 2rem;
+        display: inline-block;
+    }
+}

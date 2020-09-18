@@ -1,0 +1,26 @@
+ul.rpi-arrow-nav {
+    margin: 0;
+    margin-top: 2rem;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        border-top: 1px solid var(--rpi-accent-gray);
+        padding: 3% 1%;
+
+        a {
+            text-decoration: none;
+            color: var(--rpi-medgray);
+        }
+
+        &:last-child {
+            border-bottom: 1px solid var(--rpi-accent-gray);
+        }
+
+        &::after {
+            content: "»";
+            float: right;
+            color: var(--rpi-medgray);
+        }
+    }
+}

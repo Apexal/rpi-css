@@ -1,0 +1,39 @@
+.rpi-buttons {
+    display: flex;
+
+    .rpi-button {
+        margin-right: 10px;
+        flex: 1;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.rpi-button {
+    text-decoration: none;
+    color: var(--rpi-white);
+    background-color: var(--rpi-darkblue);
+
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5;
+
+    padding: 0.5rem 3rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+
+    &.is-fullwidth {
+        width: 100%;
+    }
+
+    &.red {
+        background-color: var(--rpi-darkred);
+    }
+}

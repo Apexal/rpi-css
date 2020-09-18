@@ -1,0 +1,44 @@
+:root {
+    /* Fonts */
+    --rpi-sans: 'Source Sans Pro', sans-serif;
+}
+
+[class^='rpi-h'] {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--rpi-black);
+
+    a {
+        color: var(--rpi-darkred);
+    }
+}
+
+.rpi-h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.rpi-h2 {
+    font-size: 1rem;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.rpi-h3 {
+    font-size: 1rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.rpi-page-title {
+    color: var(--rpi-darkred);
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 500;
+
+    &.smaller {
+        font-size: 2rem;
+    }
+}
