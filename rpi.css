@@ -176,6 +176,21 @@ ul.rpi-arrow-nav li::after {
   color: var(--rpi-medgray);
 }
 
+.rpi-alert {
+  padding: 15px;
+  color: var(--rpi-darkestgray);
+  background-color: white;
+  margin-bottom: 10px;
+}
+.rpi-alert.error {
+  background-color: var(--rpi-red);
+  color: white;
+}
+.rpi-alert.info {
+  background-color: var(--rpi-darkblue);
+  color: white;
+}
+
 .rpi-container {
   max-width: 1200px;
   padding: 1rem;

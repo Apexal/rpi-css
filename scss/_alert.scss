@@ -1,0 +1,17 @@
+.rpi-alert {
+    padding: 15px;
+    color: var(--rpi-darkestgray);
+    background-color: white;
+
+    margin-bottom: 10px;
+
+    &.error {
+        background-color: var(--rpi-red);
+        color: white;
+    }
+
+    &.info {
+        background-color: var(--rpi-darkblue);
+        color: white;
+    }
+}
