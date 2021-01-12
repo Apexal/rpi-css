@@ -36,4 +36,8 @@
     &.red {
         background-color: var(--rpi-darkred);
     }
+
+    > * {
+        vertical-align: middle;
+    }
 }

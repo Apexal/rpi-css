@@ -108,6 +108,9 @@
 .rpi-button.red {
   background-color: var(--rpi-darkred);
 }
+.rpi-button > * {
+  vertical-align: middle;
+}
 
 .rpi-navbar {
   width: 100%;
