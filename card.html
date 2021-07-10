@@ -15,7 +15,10 @@
       <a class="navbar-item is-active" href="/card.html">Card</a>
     </header>
     <main class="rpi-card">
-      <div class="rpi-alert info">Hello hello!</div>
+      <div class="rpi-alert info">Hello hello! I'm an alert.</div>
+      <div class="rpi-alert error">Hello hello! I'm an alert.
+        <span class="close" onclick="alert('Close me!')"></span>
+      </div>
 
       <h1 class="rpi-page-title smaller">Example Card</h1>
       <p>A card is useful for a really simple page or a prompt for the user.</p>
@@ -43,6 +46,8 @@
           required
         />
       </div>
+
+      <button class="rpi-button is-fullwidth">Submit</button>
 
       <ul class="rpi-arrow-nav">
         <li><a href="#" target="_blank">Link 1</a></li>

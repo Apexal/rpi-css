@@ -1,17 +1,34 @@
+@import "colors";
+
+$alert-variants: (
+  "error": $rpi-red,
+  "info": $rpi-darkblue,
+);
+
 .rpi-alert {
   padding: 15px;
-  color: var(--rpi-darkestgray);
+  color: $rpi-darkestgray;
   background-color: white;
 
   margin-bottom: 10px;
 
-  &.error {
-    background-color: var(--rpi-red);
-    color: white;
+  // Alert Variants
+  @each $name, $color in $alert-variants {
+    &.#{$name} {
+      background-color: $color;
+      @if (lightness($color) > 50) {
+        color: $rpi-black;
+      } @else {
+        color: $rpi-white;
+      }
+    }
   }
 
-  &.info {
-    background-color: var(--rpi-darkblue);
-    color: white;
+  span.close {
+    float: right;
+    &::after {
+      content: "×";
+      cursor: pointer;
+    }
   }
 }

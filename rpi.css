@@ -302,19 +302,44 @@ ul.rpi-arrow-nav li::after {
   color: #54585a;
 }
 
+/* Primary Colors */
+/* Secondary Colors */
+/* Accent Colors */
+:root {
+  --rpi-red: #d6001c;
+  --rpi-darkestgray: #222;
+  --rpi-darkgray: #363436;
+  --rpi-medgray: #54585a;
+  --rpi-black: #000;
+  --rpi-white: rpi-white;
+  --rpi-darkred: #ab2328;
+  --rpi-darkblue: #00205c;
+  --rpi-lightblue: #7fa9ae;
+  --rpi-accent-gray: rpi-accent-gray;
+  --rpi-accent-lightgray: rpi-accent-lightgray;
+  --rpi-accent-yellow: rpi-accent-yellow;
+}
+
 .rpi-alert {
   padding: 15px;
-  color: var(--rpi-darkestgray);
+  color: #222;
   background-color: white;
   margin-bottom: 10px;
 }
 .rpi-alert.error {
-  background-color: var(--rpi-red);
-  color: white;
+  background-color: #d6001c;
+  color: #fff;
 }
 .rpi-alert.info {
-  background-color: var(--rpi-darkblue);
-  color: white;
+  background-color: #00205c;
+  color: #fff;
+}
+.rpi-alert span.close {
+  float: right;
+}
+.rpi-alert span.close::after {
+  content: "×";
+  cursor: pointer;
 }
 
 /* Primary Colors */
