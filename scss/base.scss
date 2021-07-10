@@ -7,14 +7,16 @@
 @use 'alert';
 @use 'layout';
 
+@import "colors", "typography";
 
-html, body {
-    padding: 0;
-    margin: 0;
-    background-color: var(--rpi-white);
-    font-family: var(--rpi-sans);
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $rpi-white;
+  font-family: $rpi-sans;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }

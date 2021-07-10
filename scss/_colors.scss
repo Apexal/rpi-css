@@ -1,19 +1,33 @@
+/* Primary Colors */
+$rpi-red: #d6001c;
+$rpi-darkestgray: #222;
+$rpi-darkgray: #363436;
+$rpi-medgray: #54585a;
+$rpi-black: #000;
+$rpi-white: #fff;
+
+/* Secondary Colors */
+$rpi-darkred: #ab2328;
+$rpi-darkblue: #00205c;
+$rpi-lightblue: #7fa9ae;
+
+/* Accent Colors */
+$rpi-accent-gray: #9ea2a2;
+$rpi-accent-lightgray: #d7dbde;
+$rpi-accent-yellow: #ede86a;
+
+// Set CSS variables
 :root {
-    /* Primary Colors */
-    --rpi-red: #d6001c;
-    --rpi-darkestgray: #222;
-    --rpi-darkgray: #363436;
-    --rpi-medgray: #54585a;
-    --rpi-black: #000;
-    --rpi-white: #fff;
-
-    /* Secondary Colors */
-    --rpi-darkred: #ab2328;
-    --rpi-darkblue: #00205c;
-    --rpi-lightblue: #7fa9ae;
-
-    /* Accent Colors */
-    --rpi-accent-gray: #9ea2a2;
-    --rpi-accent-lightgray: #d7dbde;
-    --rpi-accent-yellow: #ede86a;
+  --rpi-red: #{$rpi-red};
+  --rpi-darkestgray: #{$rpi-darkestgray};
+  --rpi-darkgray: #{$rpi-darkgray};
+  --rpi-medgray: #{$rpi-medgray};
+  --rpi-black: #{$rpi-black};
+  --rpi-white: #{rpi-white};
+  --rpi-darkred: #{$rpi-darkred};
+  --rpi-darkblue: #{$rpi-darkblue};
+  --rpi-lightblue: #{$rpi-lightblue};
+  --rpi-accent-gray: #{rpi-accent-gray};
+  --rpi-accent-lightgray: #{rpi-accent-lightgray};
+  --rpi-accent-yellow: #{rpi-accent-yellow};
 }

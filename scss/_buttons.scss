@@ -1,43 +1,79 @@
+@import "colors";
+
+$button-variants: (
+  "red": $rpi-darkred,
+  "secondary": $rpi-medgray,
+);
+
+$disabled-button-color: $rpi-accent-gray;
+
 .rpi-buttons {
-    display: flex;
+  display: flex;
+  .rpi-button {
+    margin-right: 10px;
+    flex: 1;
 
-    .rpi-button {
-        margin-right: 10px;
-        flex: 1;
-
-        &:last-child {
-            margin-right: 0;
-        }
+    &:last-child {
+      margin-right: 0;
     }
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
 }
 
 .rpi-button {
-    text-decoration: none;
-    color: var(--rpi-white);
-    background-color: var(--rpi-darkblue);
+  text-decoration: none;
+  color: $rpi-white;
+  background-color: $rpi-darkblue;
 
-    text-transform: uppercase;
-    font-size: .9rem;
-    font-weight: 400;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.5;
 
-    padding: 0.5rem 3rem;
-    border: 2px solid transparent;
-    cursor: pointer;
-    display: inline-block;
+  padding: 0.5rem 3rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+
+  &.is-fullwidth {
+    width: 100%;
+  }
+
+  > * {
     vertical-align: middle;
+  }
 
-    &.is-fullwidth {
-        width: 100%;
-    }
+  &:hover:not(:disabled) {
+    background-color: darken($rpi-darkblue, 5%);
+  }
 
-    &.red {
-        background-color: var(--rpi-darkred);
-    }
+  &:active:not(:disabled) {
+    background-color: darken($rpi-darkblue, 10%);
+  }
 
-    > * {
-        vertical-align: middle;
+  // Color Variants
+  @each $name, $color in $button-variants {
+    &.#{$name} {
+      background-color: $color;
+
+      &:hover:not(:disabled) {
+        background-color: darken($color, 5%);
+      }
+
+      &:active:not(:disabled) {
+        background-color: darken($color, 10%);
+      }
     }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $disabled-button-color;
+  }
 }

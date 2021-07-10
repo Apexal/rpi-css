@@ -1,35 +1,57 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
+/* Primary Colors */
+/* Secondary Colors */
+/* Accent Colors */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
+/* Primary Colors */
+/* Secondary Colors */
+/* Accent Colors */
 :root {
-  /* Primary Colors */
   --rpi-red: #d6001c;
   --rpi-darkestgray: #222;
   --rpi-darkgray: #363436;
   --rpi-medgray: #54585a;
   --rpi-black: #000;
-  --rpi-white: #fff;
-  /* Secondary Colors */
+  --rpi-white: rpi-white;
   --rpi-darkred: #ab2328;
   --rpi-darkblue: #00205c;
   --rpi-lightblue: #7fa9ae;
-  /* Accent Colors */
-  --rpi-accent-gray: #9ea2a2;
-  --rpi-accent-lightgray: #d7dbde;
-  --rpi-accent-yellow: #ede86a;
+  --rpi-accent-gray: rpi-accent-gray;
+  --rpi-accent-lightgray: rpi-accent-lightgray;
+  --rpi-accent-yellow: rpi-accent-yellow;
+}
+
+/* Primary Colors */
+/* Secondary Colors */
+/* Accent Colors */
+:root {
+  --rpi-red: #d6001c;
+  --rpi-darkestgray: #222;
+  --rpi-darkgray: #363436;
+  --rpi-medgray: #54585a;
+  --rpi-black: #000;
+  --rpi-white: rpi-white;
+  --rpi-darkred: #ab2328;
+  --rpi-darkblue: #00205c;
+  --rpi-lightblue: #7fa9ae;
+  --rpi-accent-gray: rpi-accent-gray;
+  --rpi-accent-lightgray: rpi-accent-lightgray;
+  --rpi-accent-yellow: rpi-accent-yellow;
 }
 
 :root {
   /* Fonts */
-  --rpi-sans: "Source Sans Pro", sans-serif;
+  --rpi-sans: Source Sans Pro, sans-serif;
 }
 
 [class^=rpi-h] {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  color: var(--rpi-black);
+  color: #000;
 }
 [class^=rpi-h] a {
-  color: var(--rpi-darkred);
+  color: #ab2328;
 }
 [class^=rpi-h] + p {
   margin-top: 0;
@@ -54,7 +76,7 @@
 }
 
 .rpi-page-title {
-  color: var(--rpi-darkred);
+  color: #ab2328;
   font-size: 3.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -68,11 +90,29 @@
 }
 
 .rpi-page-subtitle {
-  color: var(--rpi-medgray);
+  color: #54585a;
   font-size: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: 500;
+}
+
+/* Primary Colors */
+/* Secondary Colors */
+/* Accent Colors */
+:root {
+  --rpi-red: #d6001c;
+  --rpi-darkestgray: #222;
+  --rpi-darkgray: #363436;
+  --rpi-medgray: #54585a;
+  --rpi-black: #000;
+  --rpi-white: rpi-white;
+  --rpi-darkred: #ab2328;
+  --rpi-darkblue: #00205c;
+  --rpi-lightblue: #7fa9ae;
+  --rpi-accent-gray: rpi-accent-gray;
+  --rpi-accent-lightgray: rpi-accent-lightgray;
+  --rpi-accent-yellow: rpi-accent-yellow;
 }
 
 .rpi-buttons {
@@ -85,11 +125,14 @@
 .rpi-buttons .rpi-button:last-child {
   margin-right: 0;
 }
+.rpi-buttons:not(:last-of-type) {
+  margin-bottom: 10px;
+}
 
 .rpi-button {
   text-decoration: none;
-  color: var(--rpi-white);
-  background-color: var(--rpi-darkblue);
+  color: #fff;
+  background-color: #00205c;
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 400;
@@ -105,23 +148,67 @@
 .rpi-button.is-fullwidth {
   width: 100%;
 }
-.rpi-button.red {
-  background-color: var(--rpi-darkred);
-}
 .rpi-button > * {
   vertical-align: middle;
+}
+.rpi-button:hover:not(:disabled) {
+  background-color: #001743;
+}
+.rpi-button:active:not(:disabled) {
+  background-color: #000e29;
+}
+.rpi-button.red {
+  background-color: #ab2328;
+}
+.rpi-button.red:hover:not(:disabled) {
+  background-color: #961f23;
+}
+.rpi-button.red:active:not(:disabled) {
+  background-color: #811a1e;
+}
+.rpi-button.secondary {
+  background-color: #54585a;
+}
+.rpi-button.secondary:hover:not(:disabled) {
+  background-color: #484b4d;
+}
+.rpi-button.secondary:active:not(:disabled) {
+  background-color: #3b3e40;
+}
+.rpi-button:disabled {
+  cursor: not-allowed;
+  background-color: #9ea2a2;
+}
+
+/* Primary Colors */
+/* Secondary Colors */
+/* Accent Colors */
+:root {
+  --rpi-red: #d6001c;
+  --rpi-darkestgray: #222;
+  --rpi-darkgray: #363436;
+  --rpi-medgray: #54585a;
+  --rpi-black: #000;
+  --rpi-white: rpi-white;
+  --rpi-darkred: #ab2328;
+  --rpi-darkblue: #00205c;
+  --rpi-lightblue: #7fa9ae;
+  --rpi-accent-gray: rpi-accent-gray;
+  --rpi-accent-lightgray: rpi-accent-lightgray;
+  --rpi-accent-yellow: rpi-accent-yellow;
 }
 
 .rpi-navbar {
   width: 100%;
-  background-color: var(--rpi-darkestgray);
-  color: var(--rpi-white);
+  background-color: #222;
+  color: #fff;
 }
 .rpi-navbar .navbar-brand {
   font-size: 1.25rem;
   font-weight: 600;
 }
-.rpi-navbar .navbar-item, .rpi-navbar .navbar-brand {
+.rpi-navbar .navbar-item,
+.rpi-navbar .navbar-brand {
   padding: 1rem;
   margin: 0;
   display: inline-block;
@@ -132,12 +219,30 @@
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
 }
 .rpi-navbar .navbar-item.is-active {
-  background-color: var(--rpi-white);
-  color: var(--rpi-darkestgray);
+  background-color: #fff;
+  color: #222;
 }
 .rpi-navbar .navbar-item:hover {
-  background-color: var(--rpi-white);
-  color: var(--rpi-darkestgray);
+  background-color: #fff;
+  color: #222;
+}
+
+/* Primary Colors */
+/* Secondary Colors */
+/* Accent Colors */
+:root {
+  --rpi-red: #d6001c;
+  --rpi-darkestgray: #222;
+  --rpi-darkgray: #363436;
+  --rpi-medgray: #54585a;
+  --rpi-black: #000;
+  --rpi-white: rpi-white;
+  --rpi-darkred: #ab2328;
+  --rpi-darkblue: #00205c;
+  --rpi-lightblue: #7fa9ae;
+  --rpi-accent-gray: rpi-accent-gray;
+  --rpi-accent-lightgray: rpi-accent-lightgray;
+  --rpi-accent-yellow: rpi-accent-yellow;
 }
 
 .rpi-input {
@@ -146,14 +251,32 @@
   margin: 0;
   margin-bottom: 1rem;
   padding: 0.375em 0.75em;
-  border: 1px solid var(--rpi-darkestgray);
+  border: 1px solid #222;
   width: 100%;
 }
 
 .rpi-label {
-  color: var(--rpi-darkred);
+  color: #ab2328;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/* Primary Colors */
+/* Secondary Colors */
+/* Accent Colors */
+:root {
+  --rpi-red: #d6001c;
+  --rpi-darkestgray: #222;
+  --rpi-darkgray: #363436;
+  --rpi-medgray: #54585a;
+  --rpi-black: #000;
+  --rpi-white: rpi-white;
+  --rpi-darkred: #ab2328;
+  --rpi-darkblue: #00205c;
+  --rpi-lightblue: #7fa9ae;
+  --rpi-accent-gray: rpi-accent-gray;
+  --rpi-accent-lightgray: rpi-accent-lightgray;
+  --rpi-accent-yellow: rpi-accent-yellow;
 }
 
 ul.rpi-arrow-nav {
@@ -163,20 +286,20 @@ ul.rpi-arrow-nav {
   padding: 0;
 }
 ul.rpi-arrow-nav li {
-  border-top: 1px solid var(--rpi-accent-gray);
+  border-top: 1px solid #9ea2a2;
   padding: 3% 1%;
 }
 ul.rpi-arrow-nav li a {
   text-decoration: none;
-  color: var(--rpi-medgray);
+  color: #54585a;
 }
 ul.rpi-arrow-nav li:last-child {
-  border-bottom: 1px solid var(--rpi-accent-gray);
+  border-bottom: 1px solid #9ea2a2;
 }
 ul.rpi-arrow-nav li::after {
   content: "»";
   float: right;
-  color: var(--rpi-medgray);
+  color: #54585a;
 }
 
 .rpi-alert {
@@ -194,6 +317,24 @@ ul.rpi-arrow-nav li::after {
   color: white;
 }
 
+/* Primary Colors */
+/* Secondary Colors */
+/* Accent Colors */
+:root {
+  --rpi-red: #d6001c;
+  --rpi-darkestgray: #222;
+  --rpi-darkgray: #363436;
+  --rpi-medgray: #54585a;
+  --rpi-black: #000;
+  --rpi-white: rpi-white;
+  --rpi-darkred: #ab2328;
+  --rpi-darkblue: #00205c;
+  --rpi-lightblue: #7fa9ae;
+  --rpi-accent-gray: rpi-accent-gray;
+  --rpi-accent-lightgray: rpi-accent-lightgray;
+  --rpi-accent-yellow: rpi-accent-yellow;
+}
+
 .rpi-container {
   max-width: 1200px;
   padding: 1rem;
@@ -204,14 +345,105 @@ ul.rpi-arrow-nav li::after {
   margin: 3rem auto;
   padding: 3rem;
   max-width: 500px;
-  background-color: var(--rpi-accent-lightgray);
+  background-color: #d7dbde;
 }
 
-html, body {
+:root {
+  --rpi-red: #d6001c;
+  --rpi-darkestgray: #222;
+  --rpi-darkgray: #363436;
+  --rpi-medgray: #54585a;
+  --rpi-black: #000;
+  --rpi-white: rpi-white;
+  --rpi-darkred: #ab2328;
+  --rpi-darkblue: #00205c;
+  --rpi-lightblue: #7fa9ae;
+  --rpi-accent-gray: rpi-accent-gray;
+  --rpi-accent-lightgray: rpi-accent-lightgray;
+  --rpi-accent-yellow: rpi-accent-yellow;
+}
+
+/* Primary Colors */
+/* Secondary Colors */
+/* Accent Colors */
+:root {
+  --rpi-red: #d6001c;
+  --rpi-darkestgray: #222;
+  --rpi-darkgray: #363436;
+  --rpi-medgray: #54585a;
+  --rpi-black: #000;
+  --rpi-white: rpi-white;
+  --rpi-darkred: #ab2328;
+  --rpi-darkblue: #00205c;
+  --rpi-lightblue: #7fa9ae;
+  --rpi-accent-gray: rpi-accent-gray;
+  --rpi-accent-lightgray: rpi-accent-lightgray;
+  --rpi-accent-yellow: rpi-accent-yellow;
+}
+
+:root {
+  /* Fonts */
+  --rpi-sans: Source Sans Pro, sans-serif;
+}
+
+[class^=rpi-h] {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+[class^=rpi-h] a {
+  color: #ab2328;
+}
+[class^=rpi-h] + p {
+  margin-top: 0;
+}
+
+.rpi-h1 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.rpi-h2 {
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.rpi-h3 {
+  font-size: 1rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.rpi-page-title {
+  color: #ab2328;
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.rpi-page-title.smaller {
+  font-size: 2.5rem;
+}
+.rpi-page-title + .rpi-page-subtitle {
+  margin-top: -1rem;
+}
+
+.rpi-page-subtitle {
+  color: #54585a;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+html,
+body {
   padding: 0;
   margin: 0;
-  background-color: var(--rpi-white);
-  font-family: var(--rpi-sans);
+  background-color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 * {
